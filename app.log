@@ -1,607 +1,607 @@
-2022-07-19 16:04:31,953 pymodbus.client.sync - DEBUG - Connection to Modbus server established. Socket ('192.168.1.36', 64063)
-2022-07-19 16:04:31,954 root - DEBUG - True
-2022-07-19 16:04:31,954 root - DEBUG - Reading Registers
-2022-07-19 16:04:31,954 pymodbus.transaction - DEBUG - Current transaction state - IDLE
-2022-07-19 16:04:31,954 pymodbus.transaction - DEBUG - Running transaction 1
-2022-07-19 16:04:31,954 pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x0 0x0 0x2
-2022-07-19 16:04:31,954 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:31,954 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:31,988 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:31,988 pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0xc
-2022-07-19 16:04:31,988 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0xc
-2022-07-19 16:04:31,988 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:31,988 pymodbus.transaction - DEBUG - Adding transaction 1
-2022-07-19 16:04:31,989 pymodbus.transaction - DEBUG - Getting transaction 1
-2022-07-19 16:04:31,989 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:31,989 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:31,989 pymodbus.transaction - DEBUG - Running transaction 2
-2022-07-19 16:04:31,989 pymodbus.transaction - DEBUG - SEND: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2 0x0 0x2
-2022-07-19 16:04:31,989 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:31,989 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,019 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,019 pymodbus.transaction - DEBUG - RECV: 0x0 0x2 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x50
-2022-07-19 16:04:32,020 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x50
-2022-07-19 16:04:32,020 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,020 pymodbus.transaction - DEBUG - Adding transaction 2
-2022-07-19 16:04:32,021 pymodbus.transaction - DEBUG - Getting transaction 2
-2022-07-19 16:04:32,021 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,021 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,021 pymodbus.transaction - DEBUG - Running transaction 3
-2022-07-19 16:04:32,021 pymodbus.transaction - DEBUG - SEND: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x2
-2022-07-19 16:04:32,021 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,022 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,050 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,050 pymodbus.transaction - DEBUG - RECV: 0x0 0x3 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,050 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x3 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,050 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,050 pymodbus.transaction - DEBUG - Adding transaction 3
-2022-07-19 16:04:32,050 pymodbus.transaction - DEBUG - Getting transaction 3
-2022-07-19 16:04:32,050 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,051 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,051 pymodbus.transaction - DEBUG - Running transaction 4
-2022-07-19 16:04:32,051 pymodbus.transaction - DEBUG - SEND: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x6 0x0 0x2
-2022-07-19 16:04:32,051 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,051 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,081 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,081 pymodbus.transaction - DEBUG - RECV: 0x0 0x4 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,081 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x4 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,081 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,081 pymodbus.transaction - DEBUG - Adding transaction 4
-2022-07-19 16:04:32,081 pymodbus.transaction - DEBUG - Getting transaction 4
-2022-07-19 16:04:32,081 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,082 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,082 pymodbus.transaction - DEBUG - Running transaction 5
-2022-07-19 16:04:32,082 pymodbus.transaction - DEBUG - SEND: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x8 0x0 0x2
-2022-07-19 16:04:32,082 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,082 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,112 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,112 pymodbus.transaction - DEBUG - RECV: 0x0 0x5 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,112 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x5 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,113 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - Adding transaction 5
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - Getting transaction 5
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - Running transaction 6
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - SEND: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0xa 0x0 0x2
-2022-07-19 16:04:32,113 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,113 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - RECV: 0x0 0x6 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,143 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x6 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,143 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - Adding transaction 6
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - Getting transaction 6
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - Running transaction 7
-2022-07-19 16:04:32,143 pymodbus.transaction - DEBUG - SEND: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0xc 0x0 0x2
-2022-07-19 16:04:32,144 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,144 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - RECV: 0x0 0x7 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,173 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x7 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,173 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - Adding transaction 7
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - Getting transaction 7
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - Running transaction 8
-2022-07-19 16:04:32,173 pymodbus.transaction - DEBUG - SEND: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0xe 0x0 0x2
-2022-07-19 16:04:32,173 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,174 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - RECV: 0x0 0x8 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,203 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x8 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,203 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Adding transaction 8
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Getting transaction 8
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Running transaction 9
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - SEND: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x10 0x0 0x2
-2022-07-19 16:04:32,203 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,203 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - RECV: 0x0 0x9 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,235 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x9 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,235 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Adding transaction 9
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Getting transaction 9
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Running transaction 10
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - SEND: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x12 0x0 0x2
-2022-07-19 16:04:32,235 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,235 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - RECV: 0x0 0xa 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,265 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xa 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,265 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Adding transaction 10
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Getting transaction 10
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Running transaction 11
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - SEND: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x14 0x0 0x2
-2022-07-19 16:04:32,265 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,265 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - RECV: 0x0 0xb 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,296 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xb 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,296 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Adding transaction 11
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Getting transaction 11
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Running transaction 12
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - SEND: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x16 0x0 0x2
-2022-07-19 16:04:32,296 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,296 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - RECV: 0x0 0xc 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,327 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xc 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,327 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Adding transaction 12
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Getting transaction 12
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Running transaction 13
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - SEND: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x18 0x0 0x2
-2022-07-19 16:04:32,327 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,327 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,358 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,358 pymodbus.transaction - DEBUG - RECV: 0x0 0xd 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,359 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xd 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,359 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - Adding transaction 13
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - Getting transaction 13
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - Running transaction 14
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - SEND: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x1a 0x0 0x2
-2022-07-19 16:04:32,359 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,359 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - RECV: 0x0 0xe 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,390 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xe 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,390 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - Adding transaction 14
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - Getting transaction 14
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - Running transaction 15
-2022-07-19 16:04:32,390 pymodbus.transaction - DEBUG - SEND: 0x0 0xf 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x1c 0x0 0x2
-2022-07-19 16:04:32,390 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,391 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - RECV: 0x0 0xf 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,421 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xf 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,421 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Adding transaction 15
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Getting transaction 15
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Running transaction 16
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - SEND: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x1e 0x0 0x2
-2022-07-19 16:04:32,421 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,421 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,452 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,452 pymodbus.transaction - DEBUG - RECV: 0x0 0x10 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,452 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x10 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,452 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,452 pymodbus.transaction - DEBUG - Adding transaction 16
-2022-07-19 16:04:32,452 pymodbus.transaction - DEBUG - Getting transaction 16
-2022-07-19 16:04:32,452 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,453 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,453 pymodbus.transaction - DEBUG - Running transaction 17
-2022-07-19 16:04:32,453 pymodbus.transaction - DEBUG - SEND: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x20 0x0 0x2
-2022-07-19 16:04:32,453 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,453 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,483 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,483 pymodbus.transaction - DEBUG - RECV: 0x0 0x11 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,483 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x11 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,484 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,484 pymodbus.transaction - DEBUG - Adding transaction 17
-2022-07-19 16:04:32,484 pymodbus.transaction - DEBUG - Getting transaction 17
-2022-07-19 16:04:32,484 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,484 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,484 pymodbus.transaction - DEBUG - Running transaction 18
-2022-07-19 16:04:32,484 pymodbus.transaction - DEBUG - SEND: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x22 0x0 0x2
-2022-07-19 16:04:32,485 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,485 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,515 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,516 pymodbus.transaction - DEBUG - RECV: 0x0 0x12 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,516 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x12 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,516 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,516 pymodbus.transaction - DEBUG - Adding transaction 18
-2022-07-19 16:04:32,516 pymodbus.transaction - DEBUG - Getting transaction 18
-2022-07-19 16:04:32,516 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,517 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,517 pymodbus.transaction - DEBUG - Running transaction 19
-2022-07-19 16:04:32,517 pymodbus.transaction - DEBUG - SEND: 0x0 0x13 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x24 0x0 0x2
-2022-07-19 16:04:32,517 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,517 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,546 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,546 pymodbus.transaction - DEBUG - RECV: 0x0 0x13 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,547 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x13 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,547 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,547 pymodbus.transaction - DEBUG - Adding transaction 19
-2022-07-19 16:04:32,547 pymodbus.transaction - DEBUG - Getting transaction 19
-2022-07-19 16:04:32,547 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,547 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,547 pymodbus.transaction - DEBUG - Running transaction 20
-2022-07-19 16:04:32,547 pymodbus.transaction - DEBUG - SEND: 0x0 0x14 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x26 0x0 0x2
-2022-07-19 16:04:32,548 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,548 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,578 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,578 pymodbus.transaction - DEBUG - RECV: 0x0 0x14 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,579 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x14 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,579 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,579 pymodbus.transaction - DEBUG - Adding transaction 20
-2022-07-19 16:04:32,579 pymodbus.transaction - DEBUG - Getting transaction 20
-2022-07-19 16:04:32,579 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,579 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,579 pymodbus.transaction - DEBUG - Running transaction 21
-2022-07-19 16:04:32,580 pymodbus.transaction - DEBUG - SEND: 0x0 0x15 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x28 0x0 0x2
-2022-07-19 16:04:32,580 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,580 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,609 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,609 pymodbus.transaction - DEBUG - RECV: 0x0 0x15 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,609 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x15 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,609 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - Adding transaction 21
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - Getting transaction 21
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - Running transaction 22
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - SEND: 0x0 0x16 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2a 0x0 0x2
-2022-07-19 16:04:32,610 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,610 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,640 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,641 pymodbus.transaction - DEBUG - RECV: 0x0 0x16 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,642 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x16 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,642 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,642 pymodbus.transaction - DEBUG - Adding transaction 22
-2022-07-19 16:04:32,642 pymodbus.transaction - DEBUG - Getting transaction 22
-2022-07-19 16:04:32,642 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,642 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,643 pymodbus.transaction - DEBUG - Running transaction 23
-2022-07-19 16:04:32,643 pymodbus.transaction - DEBUG - SEND: 0x0 0x17 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2c 0x0 0x2
-2022-07-19 16:04:32,643 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,643 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - RECV: 0x0 0x17 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,671 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x17 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,671 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - Adding transaction 23
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - Getting transaction 23
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - Running transaction 24
-2022-07-19 16:04:32,671 pymodbus.transaction - DEBUG - SEND: 0x0 0x18 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x30 0x0 0x2
-2022-07-19 16:04:32,673 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,673 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,701 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,702 pymodbus.transaction - DEBUG - RECV: 0x0 0x18 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,702 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x18 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,702 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,703 pymodbus.transaction - DEBUG - Adding transaction 24
-2022-07-19 16:04:32,703 pymodbus.transaction - DEBUG - Getting transaction 24
-2022-07-19 16:04:32,703 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,703 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,703 pymodbus.transaction - DEBUG - Running transaction 25
-2022-07-19 16:04:32,704 pymodbus.transaction - DEBUG - SEND: 0x0 0x19 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2e 0x0 0x2
-2022-07-19 16:04:32,704 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,704 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,732 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,733 pymodbus.transaction - DEBUG - RECV: 0x0 0x19 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,733 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x19 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,733 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,733 pymodbus.transaction - DEBUG - Adding transaction 25
-2022-07-19 16:04:32,734 pymodbus.transaction - DEBUG - Getting transaction 25
-2022-07-19 16:04:32,734 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,734 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,734 pymodbus.transaction - DEBUG - Running transaction 26
-2022-07-19 16:04:32,735 pymodbus.transaction - DEBUG - SEND: 0x0 0x1a 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x30 0x0 0x2
-2022-07-19 16:04:32,735 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,735 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,764 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,764 pymodbus.transaction - DEBUG - RECV: 0x0 0x1a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,765 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,765 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,765 pymodbus.transaction - DEBUG - Adding transaction 26
-2022-07-19 16:04:32,765 pymodbus.transaction - DEBUG - Getting transaction 26
-2022-07-19 16:04:32,766 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,766 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,766 pymodbus.transaction - DEBUG - Running transaction 27
-2022-07-19 16:04:32,766 pymodbus.transaction - DEBUG - SEND: 0x0 0x1b 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x32 0x0 0x2
-2022-07-19 16:04:32,766 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,766 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,795 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,795 pymodbus.transaction - DEBUG - RECV: 0x0 0x1b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,795 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,795 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,795 pymodbus.transaction - DEBUG - Adding transaction 27
-2022-07-19 16:04:32,795 pymodbus.transaction - DEBUG - Getting transaction 27
-2022-07-19 16:04:32,795 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,796 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,796 pymodbus.transaction - DEBUG - Running transaction 28
-2022-07-19 16:04:32,796 pymodbus.transaction - DEBUG - SEND: 0x0 0x1c 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x34 0x0 0x2
-2022-07-19 16:04:32,796 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,796 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,826 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,827 pymodbus.transaction - DEBUG - RECV: 0x0 0x1c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,827 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,827 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,827 pymodbus.transaction - DEBUG - Adding transaction 28
-2022-07-19 16:04:32,827 pymodbus.transaction - DEBUG - Getting transaction 28
-2022-07-19 16:04:32,827 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,827 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,828 pymodbus.transaction - DEBUG - Running transaction 29
-2022-07-19 16:04:32,828 pymodbus.transaction - DEBUG - SEND: 0x0 0x1d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x36 0x0 0x2
-2022-07-19 16:04:32,828 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,828 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,858 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,858 pymodbus.transaction - DEBUG - RECV: 0x0 0x1d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,858 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,858 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,858 pymodbus.transaction - DEBUG - Adding transaction 29
-2022-07-19 16:04:32,858 pymodbus.transaction - DEBUG - Getting transaction 29
-2022-07-19 16:04:32,860 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,860 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,860 pymodbus.transaction - DEBUG - Running transaction 30
-2022-07-19 16:04:32,860 pymodbus.transaction - DEBUG - SEND: 0x0 0x1e 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x38 0x0 0x2
-2022-07-19 16:04:32,860 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,860 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,889 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,889 pymodbus.transaction - DEBUG - RECV: 0x0 0x1e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,889 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,889 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,889 pymodbus.transaction - DEBUG - Adding transaction 30
-2022-07-19 16:04:32,889 pymodbus.transaction - DEBUG - Getting transaction 30
-2022-07-19 16:04:32,890 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,890 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,890 pymodbus.transaction - DEBUG - Running transaction 31
-2022-07-19 16:04:32,890 pymodbus.transaction - DEBUG - SEND: 0x0 0x1f 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3a 0x0 0x2
-2022-07-19 16:04:32,890 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,890 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,920 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,920 pymodbus.transaction - DEBUG - RECV: 0x0 0x1f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,920 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,920 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,920 pymodbus.transaction - DEBUG - Adding transaction 31
-2022-07-19 16:04:32,920 pymodbus.transaction - DEBUG - Getting transaction 31
-2022-07-19 16:04:32,920 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,921 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,921 pymodbus.transaction - DEBUG - Running transaction 32
-2022-07-19 16:04:32,921 pymodbus.transaction - DEBUG - SEND: 0x0 0x20 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3c 0x0 0x2
-2022-07-19 16:04:32,921 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,921 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,950 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,950 pymodbus.transaction - DEBUG - RECV: 0x0 0x20 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,951 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x20 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,951 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,951 pymodbus.transaction - DEBUG - Adding transaction 32
-2022-07-19 16:04:32,951 pymodbus.transaction - DEBUG - Getting transaction 32
-2022-07-19 16:04:32,951 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,952 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,952 pymodbus.transaction - DEBUG - Running transaction 33
-2022-07-19 16:04:32,952 pymodbus.transaction - DEBUG - SEND: 0x0 0x21 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3e 0x0 0x2
-2022-07-19 16:04:32,952 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,952 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:32,981 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:32,981 pymodbus.transaction - DEBUG - RECV: 0x0 0x21 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,981 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x21 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:32,982 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:32,982 pymodbus.transaction - DEBUG - Adding transaction 33
-2022-07-19 16:04:32,982 pymodbus.transaction - DEBUG - Getting transaction 33
-2022-07-19 16:04:32,982 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:32,982 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:32,982 pymodbus.transaction - DEBUG - Running transaction 34
-2022-07-19 16:04:32,982 pymodbus.transaction - DEBUG - SEND: 0x0 0x22 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x40 0x0 0x2
-2022-07-19 16:04:32,983 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:32,983 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,013 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,013 pymodbus.transaction - DEBUG - RECV: 0x0 0x22 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,013 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x22 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,014 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,014 pymodbus.transaction - DEBUG - Adding transaction 34
-2022-07-19 16:04:33,014 pymodbus.transaction - DEBUG - Getting transaction 34
-2022-07-19 16:04:33,014 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,014 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,014 pymodbus.transaction - DEBUG - Running transaction 35
-2022-07-19 16:04:33,014 pymodbus.transaction - DEBUG - SEND: 0x0 0x23 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x42 0x0 0x2
-2022-07-19 16:04:33,014 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,015 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,044 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,044 pymodbus.transaction - DEBUG - RECV: 0x0 0x23 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,044 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x23 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,044 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,044 pymodbus.transaction - DEBUG - Adding transaction 35
-2022-07-19 16:04:33,044 pymodbus.transaction - DEBUG - Getting transaction 35
-2022-07-19 16:04:33,044 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,044 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,045 pymodbus.transaction - DEBUG - Running transaction 36
-2022-07-19 16:04:33,045 pymodbus.transaction - DEBUG - SEND: 0x0 0x24 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x44 0x0 0x2
-2022-07-19 16:04:33,045 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,045 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,075 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,076 pymodbus.transaction - DEBUG - RECV: 0x0 0x24 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,076 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x24 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,076 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,076 pymodbus.transaction - DEBUG - Adding transaction 36
-2022-07-19 16:04:33,076 pymodbus.transaction - DEBUG - Getting transaction 36
-2022-07-19 16:04:33,076 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,076 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,076 pymodbus.transaction - DEBUG - Running transaction 37
-2022-07-19 16:04:33,077 pymodbus.transaction - DEBUG - SEND: 0x0 0x25 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x46 0x0 0x2
-2022-07-19 16:04:33,077 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,077 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,106 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,106 pymodbus.transaction - DEBUG - RECV: 0x0 0x25 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,106 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x25 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,106 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,107 pymodbus.transaction - DEBUG - Adding transaction 37
-2022-07-19 16:04:33,107 pymodbus.transaction - DEBUG - Getting transaction 37
-2022-07-19 16:04:33,107 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,107 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,107 pymodbus.transaction - DEBUG - Running transaction 38
-2022-07-19 16:04:33,107 pymodbus.transaction - DEBUG - SEND: 0x0 0x26 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x48 0x0 0x2
-2022-07-19 16:04:33,107 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,108 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,137 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,137 pymodbus.transaction - DEBUG - RECV: 0x0 0x26 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,138 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x26 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,138 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,138 pymodbus.transaction - DEBUG - Adding transaction 38
-2022-07-19 16:04:33,138 pymodbus.transaction - DEBUG - Getting transaction 38
-2022-07-19 16:04:33,138 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,138 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,138 pymodbus.transaction - DEBUG - Running transaction 39
-2022-07-19 16:04:33,138 pymodbus.transaction - DEBUG - SEND: 0x0 0x27 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4a 0x0 0x2
-2022-07-19 16:04:33,139 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,139 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,168 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - RECV: 0x0 0x27 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,169 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x27 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,169 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - Adding transaction 39
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - Getting transaction 39
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - Running transaction 40
-2022-07-19 16:04:33,169 pymodbus.transaction - DEBUG - SEND: 0x0 0x28 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4c 0x0 0x2
-2022-07-19 16:04:33,169 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,170 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,200 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,200 pymodbus.transaction - DEBUG - RECV: 0x0 0x28 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,201 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x28 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,201 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,201 pymodbus.transaction - DEBUG - Adding transaction 40
-2022-07-19 16:04:33,201 pymodbus.transaction - DEBUG - Getting transaction 40
-2022-07-19 16:04:33,201 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,202 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,202 pymodbus.transaction - DEBUG - Running transaction 41
-2022-07-19 16:04:33,202 pymodbus.transaction - DEBUG - SEND: 0x0 0x29 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4e 0x0 0x2
-2022-07-19 16:04:33,202 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,202 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,231 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,231 pymodbus.transaction - DEBUG - RECV: 0x0 0x29 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,232 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x29 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,232 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,232 pymodbus.transaction - DEBUG - Adding transaction 41
-2022-07-19 16:04:33,232 pymodbus.transaction - DEBUG - Getting transaction 41
-2022-07-19 16:04:33,232 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,232 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,232 pymodbus.transaction - DEBUG - Running transaction 42
-2022-07-19 16:04:33,232 pymodbus.transaction - DEBUG - SEND: 0x0 0x2a 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x50 0x0 0x2
-2022-07-19 16:04:33,232 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,233 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,262 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,262 pymodbus.transaction - DEBUG - RECV: 0x0 0x2a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,262 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,262 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - Adding transaction 42
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - Getting transaction 42
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - Running transaction 43
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - SEND: 0x0 0x2b 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x52 0x0 0x2
-2022-07-19 16:04:33,263 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,263 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,294 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,294 pymodbus.transaction - DEBUG - RECV: 0x0 0x2b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,294 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,294 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,294 pymodbus.transaction - DEBUG - Adding transaction 43
-2022-07-19 16:04:33,295 pymodbus.transaction - DEBUG - Getting transaction 43
-2022-07-19 16:04:33,295 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,295 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,295 pymodbus.transaction - DEBUG - Running transaction 44
-2022-07-19 16:04:33,295 pymodbus.transaction - DEBUG - SEND: 0x0 0x2c 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x54 0x0 0x2
-2022-07-19 16:04:33,295 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,296 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,325 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,325 pymodbus.transaction - DEBUG - RECV: 0x0 0x2c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,325 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,325 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,325 pymodbus.transaction - DEBUG - Adding transaction 44
-2022-07-19 16:04:33,325 pymodbus.transaction - DEBUG - Getting transaction 44
-2022-07-19 16:04:33,325 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,325 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,326 pymodbus.transaction - DEBUG - Running transaction 45
-2022-07-19 16:04:33,326 pymodbus.transaction - DEBUG - SEND: 0x0 0x2d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x56 0x0 0x2
-2022-07-19 16:04:33,326 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,326 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,356 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,356 pymodbus.transaction - DEBUG - RECV: 0x0 0x2d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,356 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,356 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - Adding transaction 45
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - Getting transaction 45
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - Running transaction 46
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - SEND: 0x0 0x2e 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x58 0x0 0x2
-2022-07-19 16:04:33,357 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,357 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,387 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,388 pymodbus.transaction - DEBUG - RECV: 0x0 0x2e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,388 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,388 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,388 pymodbus.transaction - DEBUG - Adding transaction 46
-2022-07-19 16:04:33,388 pymodbus.transaction - DEBUG - Getting transaction 46
-2022-07-19 16:04:33,388 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,388 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,388 pymodbus.transaction - DEBUG - Running transaction 47
-2022-07-19 16:04:33,389 pymodbus.transaction - DEBUG - SEND: 0x0 0x2f 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x5a 0x0 0x2
-2022-07-19 16:04:33,389 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,389 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,418 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,419 pymodbus.transaction - DEBUG - RECV: 0x0 0x2f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,419 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,419 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,419 pymodbus.transaction - DEBUG - Adding transaction 47
-2022-07-19 16:04:33,419 pymodbus.transaction - DEBUG - Getting transaction 47
-2022-07-19 16:04:33,419 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,420 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,420 pymodbus.transaction - DEBUG - Running transaction 48
-2022-07-19 16:04:33,420 pymodbus.transaction - DEBUG - SEND: 0x0 0x30 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x5c 0x0 0x2
-2022-07-19 16:04:33,420 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,420 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,450 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,450 pymodbus.transaction - DEBUG - RECV: 0x0 0x30 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,450 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x30 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,450 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,450 pymodbus.transaction - DEBUG - Adding transaction 48
-2022-07-19 16:04:33,450 pymodbus.transaction - DEBUG - Getting transaction 48
-2022-07-19 16:04:33,451 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,451 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,451 pymodbus.transaction - DEBUG - Running transaction 49
-2022-07-19 16:04:33,451 pymodbus.transaction - DEBUG - SEND: 0x0 0x31 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x5e 0x0 0x2
-2022-07-19 16:04:33,451 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,452 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - RECV: 0x0 0x31 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,481 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x31 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,481 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - Adding transaction 49
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - Getting transaction 49
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
-2022-07-19 16:04:33,481 pymodbus.transaction - DEBUG - Running transaction 50
-2022-07-19 16:04:33,482 pymodbus.transaction - DEBUG - SEND: 0x0 0x32 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x60 0x0 0x2
-2022-07-19 16:04:33,482 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
-2022-07-19 16:04:33,482 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
-2022-07-19 16:04:33,512 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
-2022-07-19 16:04:33,512 pymodbus.transaction - DEBUG - RECV: 0x0 0x32 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,512 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x32 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
-2022-07-19 16:04:33,512 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
-2022-07-19 16:04:33,513 pymodbus.transaction - DEBUG - Adding transaction 50
-2022-07-19 16:04:33,513 pymodbus.transaction - DEBUG - Getting transaction 50
-2022-07-19 16:04:33,513 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
-2022-07-19 16:04:33,535 urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.1.36:4000
-2022-07-19 16:04:33,615 urllib3.connectionpool - DEBUG - http://192.168.1.36:4000 "POST /data HTTP/1.1" 200 209
-2022-07-19 16:04:33,616 root - DEBUG - {"timestamp":"2022-07-19T08:04:31.954Z","bcu_voltage":0,"bcu_current":0,"pcs1_reactive_power":0,"bcu_power":0,"bcu_state_of_charge":0,"pcs1_current":0,"pcs1_voltage":0,"_id":"62d66591d0670ece0095d6e2","__v":0}
-2022-07-19 16:04:33,623 urllib3.connectionpool - DEBUG - http://192.168.1.36:4000 "DELETE /data HTTP/1.1" 404 146
+2022-07-19 16:28:47,893 pymodbus.client.sync - DEBUG - Connection to Modbus server established. Socket ('192.168.1.36', 64230)
+2022-07-19 16:28:47,893 root - DEBUG - True
+2022-07-19 16:28:47,894 root - DEBUG - Reading Registers
+2022-07-19 16:28:47,894 pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2022-07-19 16:28:47,894 pymodbus.transaction - DEBUG - Running transaction 1
+2022-07-19 16:28:47,894 pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x0 0x0 0x2
+2022-07-19 16:28:47,895 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:47,895 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:47,929 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:47,929 pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0xc
+2022-07-19 16:28:47,930 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0xc
+2022-07-19 16:28:47,930 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:47,930 pymodbus.transaction - DEBUG - Adding transaction 1
+2022-07-19 16:28:47,930 pymodbus.transaction - DEBUG - Getting transaction 1
+2022-07-19 16:28:47,930 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:47,931 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:47,931 pymodbus.transaction - DEBUG - Running transaction 2
+2022-07-19 16:28:47,931 pymodbus.transaction - DEBUG - SEND: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2 0x0 0x2
+2022-07-19 16:28:47,931 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:47,931 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:47,960 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:47,960 pymodbus.transaction - DEBUG - RECV: 0x0 0x2 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x50
+2022-07-19 16:28:47,960 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x50
+2022-07-19 16:28:47,960 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:47,961 pymodbus.transaction - DEBUG - Adding transaction 2
+2022-07-19 16:28:47,961 pymodbus.transaction - DEBUG - Getting transaction 2
+2022-07-19 16:28:47,961 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:47,961 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:47,961 pymodbus.transaction - DEBUG - Running transaction 3
+2022-07-19 16:28:47,962 pymodbus.transaction - DEBUG - SEND: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x2
+2022-07-19 16:28:47,962 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:47,962 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:47,991 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:47,991 pymodbus.transaction - DEBUG - RECV: 0x0 0x3 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:47,992 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x3 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:47,992 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:47,992 pymodbus.transaction - DEBUG - Adding transaction 3
+2022-07-19 16:28:47,992 pymodbus.transaction - DEBUG - Getting transaction 3
+2022-07-19 16:28:47,992 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:47,992 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:47,992 pymodbus.transaction - DEBUG - Running transaction 4
+2022-07-19 16:28:47,994 pymodbus.transaction - DEBUG - SEND: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x6 0x0 0x2
+2022-07-19 16:28:47,994 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:47,994 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - RECV: 0x0 0x4 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,022 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x4 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,022 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - Adding transaction 4
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - Getting transaction 4
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,022 pymodbus.transaction - DEBUG - Running transaction 5
+2022-07-19 16:28:48,023 pymodbus.transaction - DEBUG - SEND: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x8 0x0 0x2
+2022-07-19 16:28:48,023 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,023 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,054 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,054 pymodbus.transaction - DEBUG - RECV: 0x0 0x5 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,054 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x5 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,054 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,054 pymodbus.transaction - DEBUG - Adding transaction 5
+2022-07-19 16:28:48,055 pymodbus.transaction - DEBUG - Getting transaction 5
+2022-07-19 16:28:48,055 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,055 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,055 pymodbus.transaction - DEBUG - Running transaction 6
+2022-07-19 16:28:48,055 pymodbus.transaction - DEBUG - SEND: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0xa 0x0 0x2
+2022-07-19 16:28:48,055 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,055 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,083 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,083 pymodbus.transaction - DEBUG - RECV: 0x0 0x6 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,084 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x6 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,084 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,084 pymodbus.transaction - DEBUG - Adding transaction 6
+2022-07-19 16:28:48,084 pymodbus.transaction - DEBUG - Getting transaction 6
+2022-07-19 16:28:48,084 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,084 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,085 pymodbus.transaction - DEBUG - Running transaction 7
+2022-07-19 16:28:48,085 pymodbus.transaction - DEBUG - SEND: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0xc 0x0 0x2
+2022-07-19 16:28:48,085 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,085 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,115 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - RECV: 0x0 0x7 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,116 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x7 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,116 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - Adding transaction 7
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - Getting transaction 7
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - Running transaction 8
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - SEND: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0xe 0x0 0x2
+2022-07-19 16:28:48,116 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,116 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,146 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,146 pymodbus.transaction - DEBUG - RECV: 0x0 0x8 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,147 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x8 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,147 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,147 pymodbus.transaction - DEBUG - Adding transaction 8
+2022-07-19 16:28:48,148 pymodbus.transaction - DEBUG - Getting transaction 8
+2022-07-19 16:28:48,148 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,148 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,148 pymodbus.transaction - DEBUG - Running transaction 9
+2022-07-19 16:28:48,148 pymodbus.transaction - DEBUG - SEND: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x10 0x0 0x2
+2022-07-19 16:28:48,148 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,148 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,178 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,178 pymodbus.transaction - DEBUG - RECV: 0x0 0x9 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,178 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x9 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,178 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,178 pymodbus.transaction - DEBUG - Adding transaction 9
+2022-07-19 16:28:48,178 pymodbus.transaction - DEBUG - Getting transaction 9
+2022-07-19 16:28:48,179 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,179 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,179 pymodbus.transaction - DEBUG - Running transaction 10
+2022-07-19 16:28:48,179 pymodbus.transaction - DEBUG - SEND: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x12 0x0 0x2
+2022-07-19 16:28:48,179 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,179 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,209 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,209 pymodbus.transaction - DEBUG - RECV: 0x0 0xa 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,210 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xa 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,210 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,210 pymodbus.transaction - DEBUG - Adding transaction 10
+2022-07-19 16:28:48,210 pymodbus.transaction - DEBUG - Getting transaction 10
+2022-07-19 16:28:48,210 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,210 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,210 pymodbus.transaction - DEBUG - Running transaction 11
+2022-07-19 16:28:48,211 pymodbus.transaction - DEBUG - SEND: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x14 0x0 0x2
+2022-07-19 16:28:48,211 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,211 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,240 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,240 pymodbus.transaction - DEBUG - RECV: 0x0 0xb 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,240 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xb 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,240 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,240 pymodbus.transaction - DEBUG - Adding transaction 11
+2022-07-19 16:28:48,240 pymodbus.transaction - DEBUG - Getting transaction 11
+2022-07-19 16:28:48,240 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,241 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,241 pymodbus.transaction - DEBUG - Running transaction 12
+2022-07-19 16:28:48,241 pymodbus.transaction - DEBUG - SEND: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x16 0x0 0x2
+2022-07-19 16:28:48,241 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,241 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,271 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,271 pymodbus.transaction - DEBUG - RECV: 0x0 0xc 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,271 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xc 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,272 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,272 pymodbus.transaction - DEBUG - Adding transaction 12
+2022-07-19 16:28:48,272 pymodbus.transaction - DEBUG - Getting transaction 12
+2022-07-19 16:28:48,273 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,273 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,273 pymodbus.transaction - DEBUG - Running transaction 13
+2022-07-19 16:28:48,273 pymodbus.transaction - DEBUG - SEND: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x18 0x0 0x2
+2022-07-19 16:28:48,273 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,274 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,302 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,303 pymodbus.transaction - DEBUG - RECV: 0x0 0xd 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,303 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xd 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,303 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,303 pymodbus.transaction - DEBUG - Adding transaction 13
+2022-07-19 16:28:48,304 pymodbus.transaction - DEBUG - Getting transaction 13
+2022-07-19 16:28:48,304 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,304 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,304 pymodbus.transaction - DEBUG - Running transaction 14
+2022-07-19 16:28:48,304 pymodbus.transaction - DEBUG - SEND: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x1a 0x0 0x2
+2022-07-19 16:28:48,304 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,305 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,332 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - RECV: 0x0 0xe 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,333 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xe 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,333 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - Adding transaction 14
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - Getting transaction 14
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - Running transaction 15
+2022-07-19 16:28:48,333 pymodbus.transaction - DEBUG - SEND: 0x0 0xf 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x1c 0x0 0x2
+2022-07-19 16:28:48,335 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,335 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,364 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,364 pymodbus.transaction - DEBUG - RECV: 0x0 0xf 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,364 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0xf 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,365 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,365 pymodbus.transaction - DEBUG - Adding transaction 15
+2022-07-19 16:28:48,365 pymodbus.transaction - DEBUG - Getting transaction 15
+2022-07-19 16:28:48,365 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,365 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,365 pymodbus.transaction - DEBUG - Running transaction 16
+2022-07-19 16:28:48,366 pymodbus.transaction - DEBUG - SEND: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x1e 0x0 0x2
+2022-07-19 16:28:48,366 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,366 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,395 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,395 pymodbus.transaction - DEBUG - RECV: 0x0 0x10 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,396 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x10 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,396 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,396 pymodbus.transaction - DEBUG - Adding transaction 16
+2022-07-19 16:28:48,396 pymodbus.transaction - DEBUG - Getting transaction 16
+2022-07-19 16:28:48,396 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,397 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,397 pymodbus.transaction - DEBUG - Running transaction 17
+2022-07-19 16:28:48,397 pymodbus.transaction - DEBUG - SEND: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x20 0x0 0x2
+2022-07-19 16:28:48,397 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,397 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,425 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,425 pymodbus.transaction - DEBUG - RECV: 0x0 0x11 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,425 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x11 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,425 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,425 pymodbus.transaction - DEBUG - Adding transaction 17
+2022-07-19 16:28:48,425 pymodbus.transaction - DEBUG - Getting transaction 17
+2022-07-19 16:28:48,426 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,426 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,426 pymodbus.transaction - DEBUG - Running transaction 18
+2022-07-19 16:28:48,426 pymodbus.transaction - DEBUG - SEND: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x22 0x0 0x2
+2022-07-19 16:28:48,426 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,426 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,456 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,456 pymodbus.transaction - DEBUG - RECV: 0x0 0x12 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,456 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x12 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,456 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,458 pymodbus.transaction - DEBUG - Adding transaction 18
+2022-07-19 16:28:48,458 pymodbus.transaction - DEBUG - Getting transaction 18
+2022-07-19 16:28:48,458 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,458 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,458 pymodbus.transaction - DEBUG - Running transaction 19
+2022-07-19 16:28:48,458 pymodbus.transaction - DEBUG - SEND: 0x0 0x13 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x24 0x0 0x2
+2022-07-19 16:28:48,458 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,459 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,488 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,489 pymodbus.transaction - DEBUG - RECV: 0x0 0x13 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,489 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x13 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,489 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,489 pymodbus.transaction - DEBUG - Adding transaction 19
+2022-07-19 16:28:48,490 pymodbus.transaction - DEBUG - Getting transaction 19
+2022-07-19 16:28:48,490 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,490 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,490 pymodbus.transaction - DEBUG - Running transaction 20
+2022-07-19 16:28:48,490 pymodbus.transaction - DEBUG - SEND: 0x0 0x14 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x26 0x0 0x2
+2022-07-19 16:28:48,490 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,491 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,520 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,520 pymodbus.transaction - DEBUG - RECV: 0x0 0x14 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,520 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x14 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,520 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,520 pymodbus.transaction - DEBUG - Adding transaction 20
+2022-07-19 16:28:48,520 pymodbus.transaction - DEBUG - Getting transaction 20
+2022-07-19 16:28:48,520 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,520 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,521 pymodbus.transaction - DEBUG - Running transaction 21
+2022-07-19 16:28:48,521 pymodbus.transaction - DEBUG - SEND: 0x0 0x15 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x28 0x0 0x2
+2022-07-19 16:28:48,521 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,521 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,550 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,550 pymodbus.transaction - DEBUG - RECV: 0x0 0x15 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,550 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x15 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,551 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - Adding transaction 21
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - Getting transaction 21
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - Running transaction 22
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - SEND: 0x0 0x16 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2a 0x0 0x2
+2022-07-19 16:28:48,551 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,551 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,581 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,581 pymodbus.transaction - DEBUG - RECV: 0x0 0x16 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,581 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x16 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,582 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,582 pymodbus.transaction - DEBUG - Adding transaction 22
+2022-07-19 16:28:48,582 pymodbus.transaction - DEBUG - Getting transaction 22
+2022-07-19 16:28:48,582 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,582 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,583 pymodbus.transaction - DEBUG - Running transaction 23
+2022-07-19 16:28:48,583 pymodbus.transaction - DEBUG - SEND: 0x0 0x17 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2c 0x0 0x2
+2022-07-19 16:28:48,583 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,583 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,612 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,613 pymodbus.transaction - DEBUG - RECV: 0x0 0x17 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,613 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x17 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,614 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,614 pymodbus.transaction - DEBUG - Adding transaction 23
+2022-07-19 16:28:48,614 pymodbus.transaction - DEBUG - Getting transaction 23
+2022-07-19 16:28:48,614 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,614 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,614 pymodbus.transaction - DEBUG - Running transaction 24
+2022-07-19 16:28:48,614 pymodbus.transaction - DEBUG - SEND: 0x0 0x18 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x30 0x0 0x2
+2022-07-19 16:28:48,614 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,615 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,644 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,644 pymodbus.transaction - DEBUG - RECV: 0x0 0x18 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,644 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x18 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,644 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,644 pymodbus.transaction - DEBUG - Adding transaction 24
+2022-07-19 16:28:48,644 pymodbus.transaction - DEBUG - Getting transaction 24
+2022-07-19 16:28:48,645 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,645 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,645 pymodbus.transaction - DEBUG - Running transaction 25
+2022-07-19 16:28:48,645 pymodbus.transaction - DEBUG - SEND: 0x0 0x19 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2e 0x0 0x2
+2022-07-19 16:28:48,646 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,646 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,675 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,675 pymodbus.transaction - DEBUG - RECV: 0x0 0x19 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,675 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x19 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,675 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,676 pymodbus.transaction - DEBUG - Adding transaction 25
+2022-07-19 16:28:48,676 pymodbus.transaction - DEBUG - Getting transaction 25
+2022-07-19 16:28:48,676 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,676 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,676 pymodbus.transaction - DEBUG - Running transaction 26
+2022-07-19 16:28:48,677 pymodbus.transaction - DEBUG - SEND: 0x0 0x1a 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x30 0x0 0x2
+2022-07-19 16:28:48,677 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,677 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,706 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,706 pymodbus.transaction - DEBUG - RECV: 0x0 0x1a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,707 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,707 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,707 pymodbus.transaction - DEBUG - Adding transaction 26
+2022-07-19 16:28:48,707 pymodbus.transaction - DEBUG - Getting transaction 26
+2022-07-19 16:28:48,707 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,708 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,708 pymodbus.transaction - DEBUG - Running transaction 27
+2022-07-19 16:28:48,708 pymodbus.transaction - DEBUG - SEND: 0x0 0x1b 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x32 0x0 0x2
+2022-07-19 16:28:48,708 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,709 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,737 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,737 pymodbus.transaction - DEBUG - RECV: 0x0 0x1b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,738 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,738 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,738 pymodbus.transaction - DEBUG - Adding transaction 27
+2022-07-19 16:28:48,738 pymodbus.transaction - DEBUG - Getting transaction 27
+2022-07-19 16:28:48,739 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,739 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,739 pymodbus.transaction - DEBUG - Running transaction 28
+2022-07-19 16:28:48,739 pymodbus.transaction - DEBUG - SEND: 0x0 0x1c 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x34 0x0 0x2
+2022-07-19 16:28:48,739 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,740 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,769 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,769 pymodbus.transaction - DEBUG - RECV: 0x0 0x1c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,770 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,770 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,770 pymodbus.transaction - DEBUG - Adding transaction 28
+2022-07-19 16:28:48,770 pymodbus.transaction - DEBUG - Getting transaction 28
+2022-07-19 16:28:48,770 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,770 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,770 pymodbus.transaction - DEBUG - Running transaction 29
+2022-07-19 16:28:48,770 pymodbus.transaction - DEBUG - SEND: 0x0 0x1d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x36 0x0 0x2
+2022-07-19 16:28:48,770 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,771 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,799 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,800 pymodbus.transaction - DEBUG - RECV: 0x0 0x1d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,800 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,800 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,800 pymodbus.transaction - DEBUG - Adding transaction 29
+2022-07-19 16:28:48,800 pymodbus.transaction - DEBUG - Getting transaction 29
+2022-07-19 16:28:48,800 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,801 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,801 pymodbus.transaction - DEBUG - Running transaction 30
+2022-07-19 16:28:48,801 pymodbus.transaction - DEBUG - SEND: 0x0 0x1e 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x38 0x0 0x2
+2022-07-19 16:28:48,801 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,801 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,830 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,831 pymodbus.transaction - DEBUG - RECV: 0x0 0x1e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,831 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,831 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,831 pymodbus.transaction - DEBUG - Adding transaction 30
+2022-07-19 16:28:48,832 pymodbus.transaction - DEBUG - Getting transaction 30
+2022-07-19 16:28:48,832 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,832 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,832 pymodbus.transaction - DEBUG - Running transaction 31
+2022-07-19 16:28:48,832 pymodbus.transaction - DEBUG - SEND: 0x0 0x1f 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3a 0x0 0x2
+2022-07-19 16:28:48,832 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,833 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,861 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,861 pymodbus.transaction - DEBUG - RECV: 0x0 0x1f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,861 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,862 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,862 pymodbus.transaction - DEBUG - Adding transaction 31
+2022-07-19 16:28:48,862 pymodbus.transaction - DEBUG - Getting transaction 31
+2022-07-19 16:28:48,862 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,862 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,862 pymodbus.transaction - DEBUG - Running transaction 32
+2022-07-19 16:28:48,863 pymodbus.transaction - DEBUG - SEND: 0x0 0x20 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3c 0x0 0x2
+2022-07-19 16:28:48,863 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,863 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,893 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,893 pymodbus.transaction - DEBUG - RECV: 0x0 0x20 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,894 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x20 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,894 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,894 pymodbus.transaction - DEBUG - Adding transaction 32
+2022-07-19 16:28:48,894 pymodbus.transaction - DEBUG - Getting transaction 32
+2022-07-19 16:28:48,894 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,894 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,895 pymodbus.transaction - DEBUG - Running transaction 33
+2022-07-19 16:28:48,895 pymodbus.transaction - DEBUG - SEND: 0x0 0x21 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3e 0x0 0x2
+2022-07-19 16:28:48,895 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,896 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,924 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,924 pymodbus.transaction - DEBUG - RECV: 0x0 0x21 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,925 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x21 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,925 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,925 pymodbus.transaction - DEBUG - Adding transaction 33
+2022-07-19 16:28:48,925 pymodbus.transaction - DEBUG - Getting transaction 33
+2022-07-19 16:28:48,925 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,926 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,926 pymodbus.transaction - DEBUG - Running transaction 34
+2022-07-19 16:28:48,926 pymodbus.transaction - DEBUG - SEND: 0x0 0x22 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x40 0x0 0x2
+2022-07-19 16:28:48,926 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,926 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,955 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,956 pymodbus.transaction - DEBUG - RECV: 0x0 0x22 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,956 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x22 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,956 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,956 pymodbus.transaction - DEBUG - Adding transaction 34
+2022-07-19 16:28:48,956 pymodbus.transaction - DEBUG - Getting transaction 34
+2022-07-19 16:28:48,957 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,957 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,957 pymodbus.transaction - DEBUG - Running transaction 35
+2022-07-19 16:28:48,957 pymodbus.transaction - DEBUG - SEND: 0x0 0x23 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x42 0x0 0x2
+2022-07-19 16:28:48,957 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,957 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:48,987 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:48,987 pymodbus.transaction - DEBUG - RECV: 0x0 0x23 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,987 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x23 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:48,987 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:48,988 pymodbus.transaction - DEBUG - Adding transaction 35
+2022-07-19 16:28:48,988 pymodbus.transaction - DEBUG - Getting transaction 35
+2022-07-19 16:28:48,988 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:48,988 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:48,988 pymodbus.transaction - DEBUG - Running transaction 36
+2022-07-19 16:28:48,989 pymodbus.transaction - DEBUG - SEND: 0x0 0x24 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x44 0x0 0x2
+2022-07-19 16:28:48,989 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:48,989 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,018 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,019 pymodbus.transaction - DEBUG - RECV: 0x0 0x24 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,019 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x24 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,019 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,019 pymodbus.transaction - DEBUG - Adding transaction 36
+2022-07-19 16:28:49,019 pymodbus.transaction - DEBUG - Getting transaction 36
+2022-07-19 16:28:49,019 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,019 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,020 pymodbus.transaction - DEBUG - Running transaction 37
+2022-07-19 16:28:49,020 pymodbus.transaction - DEBUG - SEND: 0x0 0x25 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x46 0x0 0x2
+2022-07-19 16:28:49,020 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,020 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - RECV: 0x0 0x25 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,049 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x25 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,049 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - Adding transaction 37
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - Getting transaction 37
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,049 pymodbus.transaction - DEBUG - Running transaction 38
+2022-07-19 16:28:49,050 pymodbus.transaction - DEBUG - SEND: 0x0 0x26 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x48 0x0 0x2
+2022-07-19 16:28:49,050 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,050 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,080 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,080 pymodbus.transaction - DEBUG - RECV: 0x0 0x26 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,081 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x26 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,081 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,081 pymodbus.transaction - DEBUG - Adding transaction 38
+2022-07-19 16:28:49,081 pymodbus.transaction - DEBUG - Getting transaction 38
+2022-07-19 16:28:49,081 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,081 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,081 pymodbus.transaction - DEBUG - Running transaction 39
+2022-07-19 16:28:49,082 pymodbus.transaction - DEBUG - SEND: 0x0 0x27 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4a 0x0 0x2
+2022-07-19 16:28:49,082 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,082 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,112 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,112 pymodbus.transaction - DEBUG - RECV: 0x0 0x27 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,113 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x27 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,113 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,113 pymodbus.transaction - DEBUG - Adding transaction 39
+2022-07-19 16:28:49,113 pymodbus.transaction - DEBUG - Getting transaction 39
+2022-07-19 16:28:49,113 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,113 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,113 pymodbus.transaction - DEBUG - Running transaction 40
+2022-07-19 16:28:49,114 pymodbus.transaction - DEBUG - SEND: 0x0 0x28 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4c 0x0 0x2
+2022-07-19 16:28:49,114 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,114 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,143 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,143 pymodbus.transaction - DEBUG - RECV: 0x0 0x28 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,144 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x28 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,144 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,144 pymodbus.transaction - DEBUG - Adding transaction 40
+2022-07-19 16:28:49,144 pymodbus.transaction - DEBUG - Getting transaction 40
+2022-07-19 16:28:49,144 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,144 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,144 pymodbus.transaction - DEBUG - Running transaction 41
+2022-07-19 16:28:49,144 pymodbus.transaction - DEBUG - SEND: 0x0 0x29 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4e 0x0 0x2
+2022-07-19 16:28:49,145 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,145 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - RECV: 0x0 0x29 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,175 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x29 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,175 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - Adding transaction 41
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - Getting transaction 41
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - Running transaction 42
+2022-07-19 16:28:49,175 pymodbus.transaction - DEBUG - SEND: 0x0 0x2a 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x50 0x0 0x2
+2022-07-19 16:28:49,176 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,176 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,206 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,207 pymodbus.transaction - DEBUG - RECV: 0x0 0x2a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,207 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2a 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,207 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,207 pymodbus.transaction - DEBUG - Adding transaction 42
+2022-07-19 16:28:49,207 pymodbus.transaction - DEBUG - Getting transaction 42
+2022-07-19 16:28:49,207 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,208 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,208 pymodbus.transaction - DEBUG - Running transaction 43
+2022-07-19 16:28:49,208 pymodbus.transaction - DEBUG - SEND: 0x0 0x2b 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x52 0x0 0x2
+2022-07-19 16:28:49,208 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,208 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,237 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,237 pymodbus.transaction - DEBUG - RECV: 0x0 0x2b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,237 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2b 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,237 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,239 pymodbus.transaction - DEBUG - Adding transaction 43
+2022-07-19 16:28:49,239 pymodbus.transaction - DEBUG - Getting transaction 43
+2022-07-19 16:28:49,239 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,239 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,239 pymodbus.transaction - DEBUG - Running transaction 44
+2022-07-19 16:28:49,239 pymodbus.transaction - DEBUG - SEND: 0x0 0x2c 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x54 0x0 0x2
+2022-07-19 16:28:49,240 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,240 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,268 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,269 pymodbus.transaction - DEBUG - RECV: 0x0 0x2c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,269 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2c 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,269 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,269 pymodbus.transaction - DEBUG - Adding transaction 44
+2022-07-19 16:28:49,270 pymodbus.transaction - DEBUG - Getting transaction 44
+2022-07-19 16:28:49,270 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,270 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,270 pymodbus.transaction - DEBUG - Running transaction 45
+2022-07-19 16:28:49,270 pymodbus.transaction - DEBUG - SEND: 0x0 0x2d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x56 0x0 0x2
+2022-07-19 16:28:49,270 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,271 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,299 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,300 pymodbus.transaction - DEBUG - RECV: 0x0 0x2d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,300 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2d 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,300 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,300 pymodbus.transaction - DEBUG - Adding transaction 45
+2022-07-19 16:28:49,300 pymodbus.transaction - DEBUG - Getting transaction 45
+2022-07-19 16:28:49,301 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,301 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,301 pymodbus.transaction - DEBUG - Running transaction 46
+2022-07-19 16:28:49,301 pymodbus.transaction - DEBUG - SEND: 0x0 0x2e 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x58 0x0 0x2
+2022-07-19 16:28:49,301 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,302 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,332 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,332 pymodbus.transaction - DEBUG - RECV: 0x0 0x2e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,332 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2e 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,332 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,332 pymodbus.transaction - DEBUG - Adding transaction 46
+2022-07-19 16:28:49,332 pymodbus.transaction - DEBUG - Getting transaction 46
+2022-07-19 16:28:49,332 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,333 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,333 pymodbus.transaction - DEBUG - Running transaction 47
+2022-07-19 16:28:49,333 pymodbus.transaction - DEBUG - SEND: 0x0 0x2f 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x5a 0x0 0x2
+2022-07-19 16:28:49,333 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,333 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,362 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,362 pymodbus.transaction - DEBUG - RECV: 0x0 0x2f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,362 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2f 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,362 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,362 pymodbus.transaction - DEBUG - Adding transaction 47
+2022-07-19 16:28:49,364 pymodbus.transaction - DEBUG - Getting transaction 47
+2022-07-19 16:28:49,364 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,364 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,364 pymodbus.transaction - DEBUG - Running transaction 48
+2022-07-19 16:28:49,364 pymodbus.transaction - DEBUG - SEND: 0x0 0x30 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x5c 0x0 0x2
+2022-07-19 16:28:49,365 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,365 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,394 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,395 pymodbus.transaction - DEBUG - RECV: 0x0 0x30 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,395 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x30 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,395 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,395 pymodbus.transaction - DEBUG - Adding transaction 48
+2022-07-19 16:28:49,396 pymodbus.transaction - DEBUG - Getting transaction 48
+2022-07-19 16:28:49,396 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,396 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,396 pymodbus.transaction - DEBUG - Running transaction 49
+2022-07-19 16:28:49,396 pymodbus.transaction - DEBUG - SEND: 0x0 0x31 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x5e 0x0 0x2
+2022-07-19 16:28:49,396 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,396 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,425 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,426 pymodbus.transaction - DEBUG - RECV: 0x0 0x31 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,426 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x31 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,426 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,426 pymodbus.transaction - DEBUG - Adding transaction 49
+2022-07-19 16:28:49,426 pymodbus.transaction - DEBUG - Getting transaction 49
+2022-07-19 16:28:49,426 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,427 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 16:28:49,427 pymodbus.transaction - DEBUG - Running transaction 50
+2022-07-19 16:28:49,427 pymodbus.transaction - DEBUG - SEND: 0x0 0x32 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x60 0x0 0x2
+2022-07-19 16:28:49,427 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 16:28:49,427 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 16:28:49,455 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 16:28:49,455 pymodbus.transaction - DEBUG - RECV: 0x0 0x32 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,456 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x32 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x0
+2022-07-19 16:28:49,456 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 16:28:49,456 pymodbus.transaction - DEBUG - Adding transaction 50
+2022-07-19 16:28:49,456 pymodbus.transaction - DEBUG - Getting transaction 50
+2022-07-19 16:28:49,456 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 16:28:49,465 urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.1.36:4000
+2022-07-19 16:28:49,491 urllib3.connectionpool - DEBUG - http://192.168.1.36:4000 "POST /data HTTP/1.1" 200 209
+2022-07-19 16:28:49,492 root - DEBUG - {"timestamp":"2022-07-19T08:28:47.894Z","bcu_voltage":0,"bcu_current":0,"pcs1_reactive_power":0,"bcu_power":0,"bcu_state_of_charge":0,"pcs1_current":0,"pcs1_voltage":0,"_id":"62d66b41d0670ece0095d6e5","__v":0}
+2022-07-19 16:28:49,507 urllib3.connectionpool - DEBUG - http://192.168.1.36:4000 "DELETE /data HTTP/1.1" 404 146
