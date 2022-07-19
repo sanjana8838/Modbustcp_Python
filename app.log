@@ -1,0 +1,30 @@
+2022-07-19 14:02:27,332 pymodbus.client.sync - DEBUG - Connection to Modbus server established. Socket ('192.168.1.36', 62668)
+2022-07-19 14:02:27,332 root - DEBUG - True
+2022-07-19 14:02:27,332 root - DEBUG - Reading Registers
+2022-07-19 14:02:27,332 pymodbus.transaction - DEBUG - Current transaction state - IDLE
+2022-07-19 14:02:27,332 pymodbus.transaction - DEBUG - Running transaction 1
+2022-07-19 14:02:27,332 pymodbus.transaction - DEBUG - SEND: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x0 0x0 0x2
+2022-07-19 14:02:27,332 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 14:02:27,332 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 14:02:27,363 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 14:02:27,364 pymodbus.transaction - DEBUG - RECV: 0x0 0x1 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0xc
+2022-07-19 14:02:27,364 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x1 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0xc
+2022-07-19 14:02:27,365 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - Adding transaction 1
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - Getting transaction 1
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - Current transaction state - TRANSACTION_COMPLETE
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - Running transaction 2
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - SEND: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x2 0x0 0x2
+2022-07-19 14:02:27,365 pymodbus.client.sync - DEBUG - New Transaction state 'SENDING'
+2022-07-19 14:02:27,365 pymodbus.transaction - DEBUG - Changing transaction state from 'SENDING' to 'WAITING FOR REPLY'
+2022-07-19 14:02:27,395 pymodbus.transaction - DEBUG - Changing transaction state from 'WAITING FOR REPLY' to 'PROCESSING REPLY'
+2022-07-19 14:02:27,395 pymodbus.transaction - DEBUG - RECV: 0x0 0x2 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x50
+2022-07-19 14:02:27,395 pymodbus.framer.socket_framer - DEBUG - Processing: 0x0 0x2 0x0 0x0 0x0 0x7 0x0 0x3 0x4 0x0 0x0 0x0 0x50
+2022-07-19 14:02:27,396 pymodbus.factory - DEBUG - Factory Response[ReadHoldingRegistersResponse: 3]
+2022-07-19 14:02:27,396 pymodbus.transaction - DEBUG - Adding transaction 2
+2022-07-19 14:02:27,396 pymodbus.transaction - DEBUG - Getting transaction 2
+2022-07-19 14:02:27,396 pymodbus.transaction - DEBUG - Changing transaction state from 'PROCESSING REPLY' to 'TRANSACTION_COMPLETE'
+2022-07-19 14:02:27,408 urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 192.168.1.36:4000
+2022-07-19 14:02:27,444 urllib3.connectionpool - DEBUG - http://192.168.1.36:4000 "POST /data HTTP/1.1" 200 281
+2022-07-19 14:02:27,451 urllib3.connectionpool - DEBUG - http://192.168.1.36:4000 "DELETE /data HTTP/1.1" 404 146
