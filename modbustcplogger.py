@@ -132,7 +132,12 @@ def SendData():
     t = http_client.post(url, json=ploads)
     logging.debug((str(t.text)))
 
+def PrintData():
+    print(ploads)
+
 if __name__ == "__main__":
+    
+
     #Modbus Connect
     ModbusConnect()
 
@@ -140,15 +145,20 @@ if __name__ == "__main__":
     global http_client 
     http_client = requests.session()
 
-    #Read Registers
-    ReadRegister()
+    while True:
+        #Read Registers
+        ReadRegister()
 
-    #Send Data
-    SendData()
+        #Send Data
+        SendData()
+
+        #Print Data
+        #PrintData()
+
+        #delay
+        time.sleep(5)
 
     #Close Connections
     http_client.delete(url)
     client.close()
 
-    #delay
-    time.sleep(2)
