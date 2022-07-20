@@ -128,9 +128,6 @@ def ReadRegister():
     ploads["pcs1InvFreq"] = float(client.read_holding_registers(94, 2).registers[1]) 
     ploads["pcs1InternalTemperature"] = float(client.read_holding_registers(96, 2).registers[1]) 
 
-
-
-
 def SendData():
     t = http_client.post(url, json=ploads)
     logging.debug((str(t.text)))
