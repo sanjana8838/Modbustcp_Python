@@ -1,0 +1,7 @@
+{
+    "db_url": "http://192.168.1.36:4000/data",
+    "modbus_data_read_interval": 5,
+    "modbus_ip": "192.168.1.36",
+    "modbus_port": 502,
+    "modbus_slave_id": 2
+}

@@ -157,7 +157,7 @@ if __name__ == "__main__":
         f.close()
 
     #Modbus Connect
-    ModbusConnect(config1['modbus_ip'])
+    ModbusConnect(config1['modbus_ip'])        
 
     #http request
     global http_client 
