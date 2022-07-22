@@ -5,6 +5,8 @@ import datetime
 import logging
 import csv
 from os.path import exists as file_exists
+import json
+
 
 #backend url
 url = 'http://192.168.1.36:4000/data'
@@ -66,10 +68,10 @@ def setup_logger(logger_name, log_file, level=logging.INFO, format='%(message)s'
     l.addHandler(streamHandler)  
 
 #modbus connection
-def ModbusConnect():
+def ModbusConnect(ip, port=502):
     global client 
     logger1.debug('Connecting to Modbus...')
-    client = ModbusTcpClient('192.168.1.36', port=502)
+    client = ModbusTcpClient(ip, port=port)
     connect = client.connect()
     logging.debug(connect)
     logger1.debug('Modbus Connection Status: %s', connect)
@@ -78,7 +80,8 @@ def ModbusConnect():
 def ReadRegister():
     logging.debug('Reading Registers')
     logger1.debug('Reading Registers')
-    ploads['timestamp'] = str(datetime.datetime.now())
+    #ploads['timestamp'] = str(datetime.datetime.now())
+    ploads['timestamp'] = int(time.time())
     ploads["dc_main_contactor"] = float((client.read_holding_registers(0, 2, unit=2)).registers[1])
     ploads["stk1_contactor"] = float(client.read_holding_registers(2, 2, unit=2).registers[1])    
     ploads["primary_positive_pump"] = float(client.read_holding_registers(4, 2, unit=2).registers[1]) 
@@ -126,11 +129,10 @@ def PrintData():
     print(ploads)
 
 def csv_w(pload):
-    with open('Parameters.csv', 'a', newline='') as f:  # You will need 'wb' mode in Python 2.x
+    with open('Parameters.csv', 'a', newline='') as f:
         w = csv.writer(f)
         w.writerow(pload.values())
     f.close()
-
 
 if __name__ == "__main__":
 
@@ -141,6 +143,12 @@ if __name__ == "__main__":
     logger1 = logging.getLogger('log1')
     #logger2 = logging.getLogger('log2')  
 
+    #Config file read
+    global config1
+    with open('config.json', 'r') as f2:
+        config1 = json.load(f2)
+        f2.close()
+
     #CSV Setup
     if not file_exists('Parameters.csv'):
         with open('Parameters.csv', 'w', newline='') as f:
@@ -149,7 +157,7 @@ if __name__ == "__main__":
         f.close()
 
     #Modbus Connect
-    ModbusConnect()
+    ModbusConnect(config1['modbus_ip'])
 
     #http request
     global http_client 
