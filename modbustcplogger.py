@@ -9,7 +9,7 @@ import json
 
 
 #backend url
-url = 'http://192.168.1.36:4000/data'
+#url = 'http://192.168.1.36:4000/data'
 
 #json payload
 ploads = {
@@ -118,7 +118,7 @@ def ReadRegister():
     logger1.debug('Reading Register Complete')
     csv_w(ploads)
  
-def SendData():
+def SendData(url):
     logger1.debug('Posting Data to DB')
     t = http_client.post(url, json=ploads)
     logging.debug((str(t.text)))
@@ -168,7 +168,7 @@ if __name__ == "__main__":
         ReadRegister()
 
         #Send Data
-        SendData()
+        SendData(config1['db_url'])
 
         #Print Data
         PrintData()
