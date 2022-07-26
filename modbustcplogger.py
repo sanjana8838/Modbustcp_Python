@@ -7,7 +7,7 @@ import csv
 from os.path import exists as file_exists
 import json
 import ctypes
-
+import pymongo
 
 #backend url
 #url = 'http://192.168.1.36:4000/data'
@@ -49,7 +49,9 @@ ploads = {
     "sensor_temp":0,
     "humidity":0,
     "bms_timestamp":0,
-    "plc_alarm_status_1":0
+    "plc_alarm_status_1":0,
+    "system_state":0,
+    "powerflow_state":0
 }
 
 #root logging format and level
@@ -79,10 +81,17 @@ def ModbusConnect(ip, port=502):
 
 #Negative Number Read
 def NegativeValue(n):
-    num = int((int(n[0]) << (16)) + (int(n[1])))
-    #n = n & 0xFFFFFFFF
+    num = int((int(n[1])))
+    num = num & 0xFFFF
     num = ctypes.c_int16(num).value
     return num
+
+def ReadBlock(word):
+    num = int((int(word[0]) << (16)) + (int(word[1])))
+    return num
+
+def parse_json(data):
+    return json.dumps(data)
 
 #reading registers
 def ReadRegister():
@@ -93,34 +102,44 @@ def ReadRegister():
     timestamp1 = int(time.time())
     ploads['timestamp'] = timestamp1
 
-    dc_main_contactor = float((client.read_holding_registers(0, 2, unit=2)).registers[1])
+    dc_main_contactor = (client.read_holding_registers(0, 2, unit=2).registers)
+    dc_main_contactor = ReadBlock(dc_main_contactor)
     ploads["dc_main_contactor"] = dc_main_contactor
 
-    stk1_contactor = float(client.read_holding_registers(2, 2, unit=2).registers[1]) 
+    stk1_contactor = (client.read_holding_registers(2, 2, unit=2).registers) 
+    stk1_contactor = ReadBlock(stk1_contactor)
     ploads["stk1_contactor"] = stk1_contactor
 
-    primary_positive_pump = float(client.read_holding_registers(4, 2, unit=2).registers[1]) 
+    primary_positive_pump = (client.read_holding_registers(4, 2, unit=2).registers) 
+    primary_positive_pump = ReadBlock(primary_positive_pump)
     ploads["primary_positive_pump"] = primary_positive_pump
 
-    primary_negative_pump = float(client.read_holding_registers(6, 2, unit=2).registers[1]) 
+    primary_negative_pump = (client.read_holding_registers(6, 2, unit=2).registers) 
+    primary_negative_pump = ReadBlock(primary_negative_pump)
     ploads["primary_negative_pump"] = primary_negative_pump
 
-    balancing_valve = float(client.read_holding_registers(12, 2, unit=2).registers[1])
+    balancing_valve = (client.read_holding_registers(12, 2, unit=2).registers)
+    balancing_valve = ReadBlock(balancing_valve)
     ploads["balancing_valve"] = balancing_valve
 
-    positive_valve = float(client.read_holding_registers(14, 2, unit=2).registers[1])
+    positive_valve = (client.read_holding_registers(14, 2, unit=2).registers)
+    positive_valve = ReadBlock(positive_valve)
     ploads["positive_valve"] = positive_valve
 
-    negative_valve = float(client.read_holding_registers(16, 2, unit=2).registers[1])
+    negative_valve = (client.read_holding_registers(16, 2, unit=2).registers)
+    negative_valve = ReadBlock(negative_valve)
     ploads["negative_valve"] = negative_valve
 
-    state_of_charge = float(client.read_holding_registers(18, 2, unit=2).registers[1])
+    state_of_charge = (client.read_holding_registers(18, 2, unit=2).registers)
+    state_of_charge = ReadBlock(state_of_charge)
     ploads["state_of_charge"] = (state_of_charge)/100
 
-    bcu_mode_status = (client.read_holding_registers(20, 2, unit=2).registers[1])
+    bcu_mode_status = (client.read_holding_registers(20, 2, unit=2).registers)
+    bcu_mode_status = ReadBlock(bcu_mode_status)
     ploads["bcu_mode_status"] =  bcu_mode_status
 
-    bcu_voltage = (client.read_holding_registers(22, 2, unit=2).registers[1])
+    bcu_voltage = (client.read_holding_registers(22, 2, unit=2).registers)
+    bcu_voltage = ReadBlock(bcu_voltage)
     ploads["bcu_voltage"] = bcu_voltage
 
     bcu_current = (client.read_holding_registers(24, 2, unit=2).registers)
@@ -131,69 +150,98 @@ def ReadRegister():
     bpow = NegativeValue(bcu_power)
     ploads["bcu_power"] = bpow
 
-    bcu_state_of_charge = float(client.read_holding_registers(28, 2, unit=2).registers[1])
+    bcu_state_of_charge = (client.read_holding_registers(28, 2, unit=2).registers)
+    bcu_state_of_charge = ReadBlock(bcu_state_of_charge)
     ploads["bcu_state_of_charge"] = bcu_state_of_charge
 
-    bcu_hydrogen_sensor = float(client.read_holding_registers(30, 2, unit=2).registers[1])
+    bcu_hydrogen_sensor = (client.read_holding_registers(30, 2, unit=2).registers)
+    bcu_hydrogen_sensor = ReadBlock(bcu_hydrogen_sensor)
     ploads["bcu_hydrogen_sensor"] =  bcu_hydrogen_sensor
 
-    bcu_leakage_sensor = float(client.read_holding_registers(32, 2, unit=2).registers[1])
+    bcu_leakage_sensor = (client.read_holding_registers(32, 2, unit=2).registers)
+    bcu_leakage_sensor = ReadBlock(bcu_leakage_sensor)
     ploads["bcu_leakage_sensor"] =  bcu_leakage_sensor
 
-    smoke_sensor = float(client.read_holding_registers(34, 2, unit=2).registers[1]) 
+    smoke_sensor = (client.read_holding_registers(34, 2, unit=2).registers) 
+    smoke_sensor = ReadBlock(smoke_sensor)
     ploads["smoke_sensor"] = smoke_sensor
 
-    bcu_ocv = float(client.read_holding_registers(36, 2, unit=2).registers[1]) 
+    bcu_ocv = (client.read_holding_registers(36, 2, unit=2).registers) 
+    bcu_ocv = ReadBlock(bcu_ocv)
     ploads["bcu_ocv"] = bcu_ocv
 
-    bcu_positive_tank_temp = float(client.read_holding_registers(38, 2, unit=2).registers[1])
+    bcu_positive_tank_temp = (client.read_holding_registers(38, 2, unit=2).registers)
+    bcu_positive_tank_temp = ReadBlock(bcu_positive_tank_temp)
     ploads["bcu_positive_tank_temp"] =  bcu_positive_tank_temp
 
-    bcu_negative_tank_temp = float(client.read_holding_registers(40, 2, unit=2).registers[1]) 
+    bcu_negative_tank_temp = (client.read_holding_registers(40, 2, unit=2).registers) 
+    bcu_negative_tank_temp = ReadBlock(bcu_negative_tank_temp)
     ploads["bcu_negative_tank_temp"] = bcu_negative_tank_temp
 
-    positive_tank_high_level_float = float(client.read_holding_registers(42, 2, unit=2).registers[1]) 
+    positive_tank_high_level_float = (client.read_holding_registers(42, 2, unit=2).registers) 
+    positive_tank_high_level_float = ReadBlock(positive_tank_high_level_float)
     ploads["positive_tank_high_level_float"] = positive_tank_high_level_float
 
-    negative_tank_high_level_float = float(client.read_holding_registers(44, 2, unit=2).registers[1]) 
+    negative_tank_high_level_float = (client.read_holding_registers(44, 2, unit=2).registers) 
+    negative_tank_high_level_float = ReadBlock(negative_tank_high_level_float)
     ploads["negative_tank_high_level_float"] = negative_tank_high_level_float
 
-    positive_tank_low_level_float = float(client.read_holding_registers(46, 2, unit=2).registers[1]) 
+    positive_tank_low_level_float = (client.read_holding_registers(46, 2, unit=2).registers) 
+    positive_tank_low_level_float = ReadBlock(positive_tank_low_level_float)
     ploads["positive_tank_low_level_float"] = positive_tank_low_level_float
 
-    negative_tank_low_level_float = float(client.read_holding_registers(48, 2, unit=2).registers[1]) 
+    negative_tank_low_level_float = (client.read_holding_registers(48, 2, unit=2).registers) 
+    negative_tank_low_level_float = ReadBlock(negative_tank_low_level_float)
     ploads["negative_tank_low_level_float"] = negative_tank_low_level_float
 
-    primary_stack_voltage = float(client.read_holding_registers(50, 2, unit=2).registers[1]) 
+    primary_stack_voltage = (client.read_holding_registers(50, 2, unit=2).registers) 
+    primary_stack_voltage = ReadBlock(primary_stack_voltage)
     ploads["primary_stack_voltage"] = primary_stack_voltage
 
-    primary_stack_current = float(client.read_holding_registers(52, 2, unit=2).registers[1]) 
+    primary_stack_current = (client.read_holding_registers(52, 2, unit=2).registers) 
+    primary_stack_current = NegativeValue(primary_stack_current)
     ploads["primary_stack_current"] = primary_stack_current
 
-    primary_stack_positive_pressure_sensor = float(client.read_holding_registers(54, 2, unit=2).registers[1])
+    primary_stack_positive_pressure_sensor = (client.read_holding_registers(54, 2, unit=2).registers)
+    primary_stack_positive_pressure_sensor = ReadBlock(primary_stack_positive_pressure_sensor)
     ploads["primary_stack_positive_pressure_sensor"] = primary_stack_positive_pressure_sensor
 
-    primary_stack_negative_pressure_sensor = float(client.read_holding_registers(56, 2, unit=2).registers[1]) 
+    primary_stack_negative_pressure_sensor = (client.read_holding_registers(56, 2, unit=2).registers) 
+    primary_stack_negative_pressure_sensor = ReadBlock(primary_stack_negative_pressure_sensor)
     ploads["primary_stack_negative_pressure_sensor"] = primary_stack_negative_pressure_sensor
 
-    positive_stack_pressure_delta = float(client.read_holding_registers(58, 2, unit=2).registers[1]) 
+    positive_stack_pressure_delta = (client.read_holding_registers(58, 2, unit=2).registers) 
+    positive_stack_pressure_delta = ReadBlock(positive_stack_pressure_delta)
     ploads["positive_stack_pressure_delta"] = positive_stack_pressure_delta
 
-    b1_primary_stack_pressure_delta = float(client.read_holding_registers(60, 2, unit=2).registers[1]) 
+    b1_primary_stack_pressure_delta = (client.read_holding_registers(60, 2, unit=2).registers) 
+    b1_primary_stack_pressure_delta = ReadBlock(b1_primary_stack_pressure_delta)
     ploads["b1_primary_stack_pressure_delta"] = b1_primary_stack_pressure_delta
 
-    sensor_temp = float(client.read_holding_registers(64, 2, unit=2).registers[1]) 
+    sensor_temp = (client.read_holding_registers(64, 2, unit=2).registers) 
+    sensor_temp = ReadBlock(sensor_temp)
     ploads["sensor_temp"] = sensor_temp
 
-    humidity = float(client.read_holding_registers(62, 2, unit=2).registers[1]) 
+    humidity = (client.read_holding_registers(62, 2, unit=2).registers) 
+    humidity = ReadBlock(humidity)
     ploads["humidity"] = humidity
 
-    #bms_timestamp = float(client.read_holding_registers(102, 2, unit=2).registers[1]) 
-    #ploads["bms_timestamp"] = bms_timestamp
+    bms_timestamp = (client.read_holding_registers(102, 2, unit=2).registers) 
+    bms_timestamp = ReadBlock(bms_timestamp)
+    ploads["bms_timestamp"] = bms_timestamp
 
-    #plc_alarm_status_1 = float(client.read_holding_registers(104, 2, unit=2).registers[1]) 
-    #ploads["plc_alarm_status_1"] = plc_alarm_status_1
+    plc_alarm_status_1 = (client.read_holding_registers(104, 2, unit=2).registers) 
+    plc_alarm_status_1 = ReadBlock(plc_alarm_status_1)
+    ploads["plc_alarm_status_1"] = plc_alarm_status_1
 
+    system_state = (client.read_holding_registers(110, 2, unit=2).registers)
+    system_state = ReadBlock(system_state)
+    ploads["system_state"] =  system_state
+
+    powerflow_state = (client.read_holding_registers(112, 2, unit=2).registers)
+    powerflow_state = ReadBlock(powerflow_state)
+    ploads["powerflow_state"] = powerflow_state
+    
     logger1.debug('Reading Register Complete')
     csv_w(ploads)
  
@@ -201,8 +249,12 @@ def SendData(url):
     logger1.debug('Posting Data to DB')
     t = http_client.post(url, json=ploads)
     logging.debug((str(t.text)))
-    logger1.debug(ploads)
     logger1.debug('POST Complete')
+    logger1.debug('Sending to Local DB')
+    global x
+    x = col_db.insert_one(ploads)
+    ploads.pop("_id", None)
+    logger1.debug("Local DB document inserted")
 
 def PrintData():
     print(ploads)
@@ -212,6 +264,8 @@ def csv_w(pload):
         w = csv.writer(f)
         w.writerow(pload.values())
     f.close()
+
+
 
 if __name__ == "__main__":
 
@@ -241,6 +295,13 @@ if __name__ == "__main__":
     #http request
     global http_client 
     http_client = requests.session()
+
+    #MongoDB setup
+    client_db = pymongo.MongoClient(config1['mongodb_url'])
+    global m_db
+    m_db = client_db["local"]
+    global col_db
+    col_db = m_db["post_python"]
 
     while True:
         #Read Registers
