@@ -1,0 +1,34 @@
+alarm_st = "Alarm_"
+def decode_alrm(status):
+    if (status & 0x1):
+        alarm_st = alarm_st + "ss_"
+    elif (status & 0x2):
+        alarm_st = alarm_st + "lvlf_"
+    elif (status & 0x4):
+        alarm_st = alarm_st + "lka_"
+    elif (status & 0x8):
+        alarm_st = alarm_st + "highetmp_"  
+    elif (status & 0x10):
+        alarm_st = alarm_st + "lowprs_" 
+    elif (status & 0x20):
+        alarm_st = alarm_st + "hightmp_" 
+    elif (status & 0x40):
+        alarm_st = alarm_st + "hs_"
+    elif (status & 0x80):
+        alarm_st = alarm_st + "hc_"
+    elif (status & 0x100):
+        alarm_st = alarm_st + "sc_"
+    elif (status & 0x200):
+        alarm_st = alarm_st + "hv_"
+    elif (status & 0x400):
+        alarm_st = alarm_st + "lsoc_"
+    elif (status & 0x800):
+        alarm_st = alarm_st + "hsoc_"
+    elif (status & 0x1000):
+        alarm_st = alarm_st + "hprs_"
+    elif (status & 0x2000):
+        alarm_st = alarm_st + "dprs_"
+    elif (status & 0x4000):
+        alarm_st = alarm_st + "invcomm_"
+    elif (status & 0x8000):
+        alarm_st = alarm_st + "iot_"

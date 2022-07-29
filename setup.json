@@ -4,5 +4,7 @@
     "modbus_ip": "192.168.1.36",
     "modbus_port": 502,
     "modbus_slave_id": 2,
-    "mongodb_url": "mongodb://127.0.0.1:27017"
+    "mongodb_url": "mongodb://127.0.0.1:27017",
+    "broker_addr": "localhost",
+    "mqtt_topic": "voltage/value"
 }

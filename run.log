@@ -1,38 +1,19 @@
-2022-07-26 18:10:56,942 - Connecting to Modbus...
-2022-07-26 18:10:56,956 - Modbus Connection Status: True
-2022-07-26 18:10:56,968 - Reading Registers
-2022-07-26 18:10:58,093 - Reading Register Complete
-2022-07-26 18:10:58,095 - Posting Data to DB
-2022-07-26 18:10:58,126 - POST Complete
-2022-07-26 18:10:58,127 - Sending to Local DB
-2022-07-26 18:10:58,157 - Local DB document inserted
-2022-07-26 18:11:03,166 - Reading Registers
-2022-07-26 18:11:04,239 - Reading Register Complete
-2022-07-26 18:11:04,241 - Posting Data to DB
-2022-07-26 18:11:04,265 - POST Complete
-2022-07-26 18:11:04,266 - Sending to Local DB
-2022-07-26 18:11:04,269 - Local DB document inserted
-2022-07-26 18:11:09,278 - Reading Registers
-2022-07-26 18:11:10,351 - Reading Register Complete
-2022-07-26 18:11:10,354 - Posting Data to DB
-2022-07-26 18:11:10,383 - POST Complete
-2022-07-26 18:11:10,384 - Sending to Local DB
-2022-07-26 18:11:10,387 - Local DB document inserted
-2022-07-26 18:11:15,407 - Reading Registers
-2022-07-26 18:11:16,496 - Reading Register Complete
-2022-07-26 18:11:16,497 - Posting Data to DB
-2022-07-26 18:11:16,515 - POST Complete
-2022-07-26 18:11:16,515 - Sending to Local DB
-2022-07-26 18:11:16,518 - Local DB document inserted
-2022-07-26 18:11:21,531 - Reading Registers
-2022-07-26 18:11:22,605 - Reading Register Complete
-2022-07-26 18:11:22,608 - Posting Data to DB
-2022-07-26 18:11:22,633 - POST Complete
-2022-07-26 18:11:22,634 - Sending to Local DB
-2022-07-26 18:11:22,637 - Local DB document inserted
-2022-07-26 18:11:27,646 - Reading Registers
-2022-07-26 18:11:28,724 - Reading Register Complete
-2022-07-26 18:11:28,728 - Posting Data to DB
-2022-07-26 18:11:28,767 - POST Complete
-2022-07-26 18:11:28,769 - Sending to Local DB
-2022-07-26 18:11:28,774 - Local DB document inserted
+2022-07-29 15:13:16,222 - Connecting to Modbus...
+2022-07-29 15:13:16,224 - Modbus Connection Status: True
+2022-07-29 15:13:16,259 - Reading Registers
+2022-07-29 15:13:17,335 - Reading Register Complete
+2022-07-29 15:13:17,337 - Posting Data to DB
+2022-07-29 15:13:17,367 - POST Complete
+2022-07-29 15:13:17,367 - Sending to Local DB
+2022-07-29 15:13:17,384 - Local DB document inserted
+2022-07-29 15:13:17,390 - MQTT Publish Start
+2022-07-29 15:13:17,392 - MQTT Publish Complete
+2022-07-29 15:13:22,401 - Reading Registers
+2022-07-29 15:13:23,479 - Reading Register Complete
+2022-07-29 15:13:23,481 - Posting Data to DB
+2022-07-29 15:13:23,495 - POST Complete
+2022-07-29 15:13:23,496 - Sending to Local DB
+2022-07-29 15:13:23,498 - Local DB document inserted
+2022-07-29 15:13:23,502 - MQTT Publish Start
+2022-07-29 15:13:23,502 - MQTT Publish Complete
+2022-07-29 15:13:28,515 - Reading Registers

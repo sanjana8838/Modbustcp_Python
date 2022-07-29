@@ -8,6 +8,7 @@ from os.path import exists as file_exists
 import json
 import ctypes
 import pymongo
+import paho.mqtt.client as mqtt
 
 #backend url
 #url = 'http://192.168.1.36:4000/data'
@@ -51,7 +52,8 @@ ploads = {
     "bms_timestamp":0,
     "plc_alarm_status_1":0,
     "system_state":0,
-    "powerflow_state":0
+    "powerflow_state":0,
+    "alarm_status":"Alarm_"
 }
 
 #root logging format and level
@@ -90,8 +92,42 @@ def ReadBlock(word):
     num = int((int(word[0]) << (16)) + (int(word[1])))
     return num
 
-def parse_json(data):
-    return json.dumps(data)
+
+def decode_alrm(status):
+    alarm_st = "Alarm_"
+    if (status & 0x1):
+        alarm_st = alarm_st + "ss_"
+    elif (status & 0x2):
+        alarm_st = alarm_st + "lvlf_"
+    elif (status & 0x4):
+        alarm_st = alarm_st + "lka_"
+    elif (status & 0x8):
+        alarm_st = alarm_st + "highetmp_"  
+    elif (status & 0x10):
+        alarm_st = alarm_st + "lowprs_" 
+    elif (status & 0x20):
+        alarm_st = alarm_st + "hightmp_" 
+    elif (status & 0x40):
+        alarm_st = alarm_st + "hs_"
+    elif (status & 0x80):
+        alarm_st = alarm_st + "hc_"
+    elif (status & 0x100):
+        alarm_st = alarm_st + "sc_"
+    elif (status & 0x200):
+        alarm_st = alarm_st + "hv_"
+    elif (status & 0x400):
+        alarm_st = alarm_st + "lsoc_"
+    elif (status & 0x800):
+        alarm_st = alarm_st + "hsoc_"
+    elif (status & 0x1000):
+        alarm_st = alarm_st + "hprs_"
+    elif (status & 0x2000):
+        alarm_st = alarm_st + "dprs_"
+    elif (status & 0x4000):
+        alarm_st = alarm_st + "invcomm_"
+    elif (status & 0x8000):
+        alarm_st = alarm_st + "iot_"
+    return alarm_st
 
 #reading registers
 def ReadRegister():
@@ -232,7 +268,9 @@ def ReadRegister():
 
     plc_alarm_status_1 = (client.read_holding_registers(104, 2, unit=2).registers) 
     plc_alarm_status_1 = ReadBlock(plc_alarm_status_1)
-    ploads["plc_alarm_status_1"] = plc_alarm_status_1
+    ploads["plc_alarm_status_1"] = hex(plc_alarm_status_1)
+
+    ploads["alarm_status"] = decode_alrm(plc_alarm_status_1) 
 
     system_state = (client.read_holding_registers(110, 2, unit=2).registers)
     system_state = ReadBlock(system_state)
@@ -264,7 +302,19 @@ def csv_w(pload):
         w = csv.writer(f)
         w.writerow(pload.values())
     f.close()
-
+    
+    
+def mqtt_pub(msg, topic):
+    try:
+        if 1:
+            #msg = (json.dumps(msg))
+            msg = str(msg)
+            logger1.debug('MQTT Publish Start')
+            client_mqtt.publish(topic, msg)
+            print(msg)
+            logger1.debug('MQTT Publish Complete')
+    except OSError:
+        logger1.debug('Publish Failure')
 
 
 if __name__ == "__main__":
@@ -303,6 +353,11 @@ if __name__ == "__main__":
     global col_db
     col_db = m_db["post_python"]
 
+    #MQTT Connection setup
+    global client_mqtt
+    client_mqtt = mqtt.Client("P1_IOT")
+    client_mqtt.connect(str(config1['broker_addr']))
+
     while True:
         #Read Registers
         ReadRegister()
@@ -312,6 +367,9 @@ if __name__ == "__main__":
 
         #Print Data
         PrintData()
+
+        #Publish MQTT
+        mqtt_pub(ploads["bcu_voltage"], config1['mqtt_topic'])
 
         #delay
         time.sleep(5)
